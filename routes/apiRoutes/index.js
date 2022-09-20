@@ -1,11 +1,14 @@
 const router = require('express').Router();
 const {createNewNote, updateDb} = require('../../lib/notes');
 const { v4: uuidv4 } = require('uuid');
-const {notes} = require('../../db/db.json');
+//const {notes} = require('../../db/db.json');
+let notes = require("../../db/db.json")
+const fs = require("fs")
 
 //GET
 router.get('/notes', (req, res) => {
-    let results = notes;
+    //let results = notes;
+    let results = JSON.parse(fs.readFileSync("./db/db.json")) || []
     res.json(results);
   });
 
