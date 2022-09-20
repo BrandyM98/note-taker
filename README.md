@@ -8,7 +8,7 @@
   4. [Visuals](#visuals)
 
   ## Submission
-  [Link to Heroku Page]
+  [Link to Heroku Page](https://rocky-temple-71623.herokuapp.com/ "Heroku App")
 
   ## Description
   This note taking application allows users to create notes, save the, and delete them. This application is also hosted on heroku. 
