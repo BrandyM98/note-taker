@@ -12,18 +12,18 @@ router.get('/notes', (req, res) => {
     res.json(results);
   });
 
-// //POST
-// router.post('/notes', (req, res) => {
-//     req.body.id = uuidv4();
-//     const newNote = createNewNote(req.body, notes);
-//     res.json(newNote);
-//   });  
+//POST
+router.post('/notes', (req, res) => {
+    req.body.id = uuidv4();
+    const newNote = createNewNote(req.body, notes);
+    res.json(newNote);
+  });  
 
-// //DELETE
-// router.delete('/notes/:id' , (req, res) => {
-//     const params = req.params.id
-//     updateDb(params, notes);
-//     res.redirect('');
-//   });
+//DELETE
+router.delete('/notes/:id' , (req, res) => {
+    const params = req.params.id
+    updateDb(params, notes);
+    res.redirect('');
+  });
 
 module.exports = router;
