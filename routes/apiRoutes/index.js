@@ -8,8 +8,9 @@ const fs = require("fs")
 //GET
 router.get('/notes', (req, res) => {
     //let results = notes;
-    let results = JSON.parse(fs.readFileSync("./db/db.json")) || []
-    res.json(results);
+    //let results = JSON.parse(fs.readFileSync("./db/db.json")) || []
+    //console.log('/api/notes fired!')
+    res.json(notes);
   });
 
 //POST
