@@ -15,7 +15,12 @@ router.post('/notes', (req, res) => {
     const newNote = createNewNote(req.body, notes);
     res.json(newNote);
   });  
-//DELETE
 
+//DELETE
+router.delete('/notes/:id' , (req, res) => {
+    const params = req.params.id
+    updateDb(params, notes);
+    res.redirect('');
+  });
 
 module.exports = router;
