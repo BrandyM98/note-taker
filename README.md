@@ -18,4 +18,4 @@
 
   ## Visuals
 
- ![Alt text]()
+ ![Alt text](./Note-Taker%20main.png)
