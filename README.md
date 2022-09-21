@@ -19,3 +19,6 @@
   ## Visuals
 
  ![Alt text](./Note-Taker%20main.png)
+ ![Alt text](./Note-Taker.png)
+ [![Video walk through]({image-url})]({https://user-images.githubusercontent.com/109112965/191390854-28fb0f6d-0931-4ef5-8d25-af0676e52281.webm})
+ 
